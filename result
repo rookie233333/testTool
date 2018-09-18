@@ -1,0 +1,180 @@
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking demo.crux.yoctotta.com (be patient)
+
+
+Server Software:        nginx/1.13.12
+Server Hostname:        demo.crux.yoctotta.com
+Server Port:            30358
+
+Document Path:          /event.svc/event
+Document Length:        95 bytes
+
+Concurrency Level:      1
+Time taken for tests:   71.282 seconds
+Complete requests:      200
+Failed requests:        0
+Total transferred:      107000 bytes
+Total body sent:        85200
+HTML transferred:       19000 bytes
+Requests per second:    2.81 [#/sec] (mean)
+Time per request:       356.412 [ms] (mean)
+Time per request:       356.412 [ms] (mean, across all concurrent requests)
+Transfer rate:          1.47 [Kbytes/sec] received
+                        1.17 kb/s sent
+                        2.63 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      141  168  17.3    163     228
+Processing:   152  188  25.1    184     330
+Waiting:      152  185  18.8    183     252
+Total:        309  356  31.8    349     491
+
+Percentage of the requests served within a certain time (ms)
+  50%    349
+  66%    359
+  75%    374
+  80%    379
+  90%    399
+  95%    418
+  98%    449
+  99%    483
+ 100%    491 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking demo.crux.yoctotta.com (be patient).....done
+
+
+Server Software:        nginx/1.13.12
+Server Hostname:        demo.crux.yoctotta.com
+Server Port:            30358
+
+Document Path:          /event.svc/event
+Document Length:        95 bytes
+
+Concurrency Level:      1
+Time taken for tests:   17.463 seconds
+Complete requests:      50
+Failed requests:        0
+Total transferred:      26750 bytes
+Total body sent:        21300
+HTML transferred:       4750 bytes
+Requests per second:    2.86 [#/sec] (mean)
+Time per request:       349.266 [ms] (mean)
+Time per request:       349.266 [ms] (mean, across all concurrent requests)
+Transfer rate:          1.50 [Kbytes/sec] received
+                        1.19 kb/s sent
+                        2.69 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      141  166  27.5    160     323
+Processing:   152  183  20.1    182     281
+Waiting:      152  182  20.0    182     281
+Total:        307  349  34.4    341     505
+
+Percentage of the requests served within a certain time (ms)
+  50%    341
+  66%    352
+  75%    359
+  80%    364
+  90%    382
+  95%    391
+  98%    505
+  99%    505
+ 100%    505 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking demo.crux.yoctotta.com (be patient)
+
+
+Server Software:        nginx/1.13.12
+Server Hostname:        demo.crux.yoctotta.com
+Server Port:            30358
+
+Document Path:          /event.svc/event
+Document Length:        95 bytes
+
+Concurrency Level:      1
+Time taken for tests:   92.627 seconds
+Complete requests:      200
+Failed requests:        0
+Total transferred:      107000 bytes
+Total body sent:        85200
+HTML transferred:       19000 bytes
+Requests per second:    2.16 [#/sec] (mean)
+Time per request:       463.137 [ms] (mean)
+Time per request:       463.137 [ms] (mean, across all concurrent requests)
+Transfer rate:          1.13 [Kbytes/sec] received
+                        0.90 kb/s sent
+                        2.03 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      159  221 101.3    213    1585
+Processing:   168  242 148.3    229    2277
+Waiting:      168  239 147.9    226    2277
+Total:        336  463 185.1    438    2549
+
+Percentage of the requests served within a certain time (ms)
+  50%    438
+  66%    465
+  75%    473
+  80%    483
+  90%    503
+  95%    531
+  98%    631
+  99%   1850
+ 100%   2549 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking demo.crux.yoctotta.com (be patient)
+
+
+Server Software:        nginx/1.13.12
+Server Hostname:        demo.crux.yoctotta.com
+Server Port:            30358
+
+Document Path:          /event.svc/event
+Document Length:        95 bytes
+
+Concurrency Level:      1
+Time taken for tests:   96.770 seconds
+Complete requests:      200
+Failed requests:        0
+Total transferred:      107000 bytes
+Total body sent:        85200
+HTML transferred:       19000 bytes
+Requests per second:    2.07 [#/sec] (mean)
+Time per request:       483.848 [ms] (mean)
+Time per request:       483.848 [ms] (mean, across all concurrent requests)
+Transfer rate:          1.08 [Kbytes/sec] received
+                        0.86 kb/s sent
+                        1.94 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      173  232  82.7    223    1331
+Processing:   183  251  86.6    239    1050
+Waiting:      183  242  32.7    237     454
+Total:        365  483 123.3    465    1611
+
+Percentage of the requests served within a certain time (ms)
+  50%    465
+  66%    488
+  75%    501
+  80%    508
+  90%    540
+  95%    572
+  98%    726
+  99%   1285
+ 100%   1611 (longest request)

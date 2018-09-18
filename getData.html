@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"> </script>
+</head>
+
+<body>
+    <script>
+        var timer = 500;
+        var startTime = new Date();
+        var startNum, firstLock = false;
+        var inter = setInterval(function () {
+            $.ajax({
+                url: 'http://demo.crux.yoctotta.com:30358/data.svc/Dev/PerformanceTests?$select=crux__state,id,name,sex,age,counter',
+                success: function (r) {
+                    document.write(JSON.stringify(r) + '&nbsp;&nbsp;&nbsp;&nbsp;' + getDate() + "</br>");
+                    handler(r.value, 'counter', 200, '001');
+                }
+            });
+        }, timer);
+        setTimeout(function () {
+            document.write('<button class="stop">stop</button></br>');
+            $(document).on('click', '.stop', function () {
+                stopLoop();
+            })
+        })
+        function getDate() {
+            var date = new Date();
+            return date.getHours() + 'h ' + date.getMinutes() + 'm ' + date.getSeconds() + 's ' + date.getMilliseconds() + 'ms';
+        }
+        function stopLoop(end) {
+            clearInterval(inter);
+            var nowDate = new Date();
+            setTimeout(function () {
+                document.write('run-time:' + (nowDate - startTime) / 1000 + 's</br>');
+                document.write('start-counter:' + startNum + ' end-counter:' + end);
+            }, 500)
+        }
+        function handler(r, fieldName, counter, idx) {
+            if (r instanceof Array) {
+                r.forEach(function (item) {
+                    if (item.id === idx) {
+                        if (firstLock) {
+                            if (item[fieldName] - startNum >= counter) {
+                                stopLoop(item[fieldName]);
+                            }
+                        } else {
+                            firstLock = true;
+                            startNum = item[fieldName];
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>

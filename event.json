@@ -1,0 +1,15 @@
+{
+    "application": "Dev",
+    "name": "modifyPt",
+    "properties": {
+        "id": "001",
+        "name": "Rose",
+        "sex": "F",
+        "age": 200,
+        "counter": 10
+    },
+    "token": {
+        "uid": "",
+        "token": ""
+    }
+}
