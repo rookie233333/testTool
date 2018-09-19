@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <title>multiRecordTest</title>
+</head>
+
+<body>
+    <script>
+        var data = [{
+            "id": "0001",
+            "operNum1": 5,
+            "operNum2": 20,
+            "operation": "+"
+        }]
+        var url = 'http://demo.crux.yoctotta.com:30358/event.svc/event';
+        var startime = new Date();
+        var eventName = 'operation';
+        var app = 'Dev';
+
+        //发送请求
+        function sendPost(data, i) {
+            var params = {
+                "name": eventName,
+                "properties": data,
+                "application": app,
+                "token": {
+                    "uid": "", "token": ""
+                }
+            };
+            var sTime = new Date();
+            $.ajax({
+                url: url,
+                type: 'POST',
+                data: JSON.stringify(params),
+                headers: {
+                    'Authorization': 'eyJhbGciOiJIUzUxMiJ9.eyJuYW1lIjoiU3lzdGVtQWRtaW4iLCJleHAiOjE1MzczMzU3NTIsInVzZXJuYW1lIjoic3lzLWFkbSJ9.0OBz6m5jpJOMdyOkj79xGxzXncTH4Wgtuif8OlmSb2G1eA12WBc2RCo7s7H6l4t5scgWBdhU_2RjVCKsw_phPg'
+                },
+                success: function (r) {
+                    printOut(i, sTime, params, r);
+                },
+                error: function (r) {
+                    printOut(i, sTime, params, r);
+                }
+            });
+        }
+
+        function sendAllPost() {
+            for (var i; i < data.length; i++) {
+                sendPost(data[i], i + 1);
+            }
+            document.write((new Date() - startime))
+        }
+        function printOut(i, startime, params, r) {
+            var endTime = new Date();
+            document.write(i + "." + JSON.stringify(params) + "</br>" + JSON.stringify(r) + "&nbsp;&nbsp;&nbsp;&nbsp;Spend Time:" + (endTime - startime) + "ms</br>");
+        }
+
+        document.write('<button>start</button>');
+        $(document).on('click', 'button', function () {
+            sendAllPost();
+        })
+    </script>
+</body>
+
+</html>

@@ -1,1 +1,1 @@
-ab -n200 -c1 -T "application/json" -p event.json http://demo.crux.yoctotta.com:30358/event.svc/event>>result
+ab -n200 -c10 -T "application/json" -p event.json -H"Authorization:eyJhbGciOiJIUzUxMiJ9.eyJuYW1lIjoiU3lzdGVtQWRtaW4iLCJleHAiOjE1MzczMzU3NTIsInVzZXJuYW1lIjoic3lzLWFkbSJ9.0OBz6m5jpJOMdyOkj79xGxzXncTH4Wgtuif8OlmSb2G1eA12WBc2RCo7s7H6l4t5scgWBdhU_2RjVCKsw_phPg" http://demo.crux.yoctotta.com:30358/event.svc/event>>result

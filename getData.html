@@ -11,51 +11,71 @@
 
 <body>
     <script>
-        var timer = 500;
-        var startTime = new Date();
-        var startNum, firstLock = false;
-        var inter = setInterval(function () {
-            $.ajax({
-                url: 'http://demo.crux.yoctotta.com:30358/data.svc/Dev/PerformanceTests?$select=crux__state,id,name,sex,age,counter',
-                success: function (r) {
-                    document.write(JSON.stringify(r) + '&nbsp;&nbsp;&nbsp;&nbsp;' + getDate() + "</br>");
-                    handler(r.value, 'counter', 200, '001');
+        var timer = 500;//请求间隔ms
+        var startTime = new Date();//记录执行开始时间
+        var startNum;//记录开始数字
+        var idx = '001';//数据id
+        var fieldName = 'counter';//目标字段
+        var counter = 1000;//增加次数
+        var url = 'http://demo.crux.yoctotta.com:30358/data.svc/Dev/PerformanceTests?$select=crux__state,id,name,sex,age,counter';//url
+        sendPost(function (r) {
+            r.value.forEach(function (item) {
+                if (item.id == idx) {
+                    startNum = item[fieldName];
                 }
-            });
+            })
+        });
+        //循环请求
+        var inter = setInterval(function () {
+            sendPost(function (r) {
+                document.write(JSON.stringify(r) + '&nbsp;&nbsp;&nbsp;&nbsp;' + getDate() + "</br>");
+                handler(r.value);
+            })
         }, timer);
+        //生成stop
         setTimeout(function () {
-            document.write('<button class="stop">stop</button></br>');
-            $(document).on('click', '.stop', function () {
+            document.write('<button id="stop">stop</button></br>');
+            $(document).on('click', '#stop', function () {
                 stopLoop();
             })
-        })
+        });
+        //获取当前时间
         function getDate() {
             var date = new Date();
             return date.getHours() + 'h ' + date.getMinutes() + 'm ' + date.getSeconds() + 's ' + date.getMilliseconds() + 'ms';
         }
+        //停止循环
         function stopLoop(end) {
             clearInterval(inter);
             var nowDate = new Date();
             setTimeout(function () {
                 document.write('run-time:' + (nowDate - startTime) / 1000 + 's</br>');
                 document.write('start-counter:' + startNum + ' end-counter:' + end);
-            }, 500)
+            }, 1000)
         }
-        function handler(r, fieldName, counter, idx) {
+        //计数处理
+        function handler(r) {
             if (r instanceof Array) {
                 r.forEach(function (item) {
                     if (item.id === idx) {
-                        if (firstLock) {
-                            if (item[fieldName] - startNum >= counter) {
-                                stopLoop(item[fieldName]);
-                            }
-                        } else {
-                            firstLock = true;
-                            startNum = item[fieldName];
+                        if (item[fieldName] - startNum >= counter) {
+                            stopLoop(item[fieldName]);
                         }
                     }
                 });
             }
+        }
+        //发送请求
+        function sendPost(callback) {
+            $.ajax({
+                url: url,
+                headers: {
+                    'Authorization': 'eyJhbGciOiJIUzUxMiJ9.eyJuYW1lIjoiU3lzdGVtQWRtaW4iLCJleHAiOjE1MzczMzU3NTIsInVzZXJuYW1lIjoic3lzLWFkbSJ9.0OBz6m5jpJOMdyOkj79xGxzXncTH4Wgtuif8OlmSb2G1eA12WBc2RCo7s7H6l4t5scgWBdhU_2RjVCKsw_phPg'
+                },
+                success: function (r) {
+                    callback && callback(r);
+                }
+            });
         }
     </script>
 </body>

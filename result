@@ -178,3 +178,2951 @@ Percentage of the requests served within a certain time (ms)
   98%    726
   99%   1285
  100%   1611 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking demo.crux.yoctotta.com (be patient)
+
+
+Server Software:        nginx/1.13.12
+Server Hostname:        demo.crux.yoctotta.com
+Server Port:            30358
+
+Document Path:          /event.svc/event
+Document Length:        126 bytes
+
+Concurrency Level:      10
+Time taken for tests:   93.956 seconds
+Complete requests:      200
+Failed requests:        0
+Non-2xx responses:      200
+Total transferred:      117200 bytes
+Total body sent:        85200
+HTML transferred:       25200 bytes
+Requests per second:    2.13 [#/sec] (mean)
+Time per request:       4697.819 [ms] (mean)
+Time per request:       469.782 [ms] (mean, across all concurrent requests)
+Transfer rate:          1.22 [Kbytes/sec] received
+                        0.89 kb/s sent
+                        2.10 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      421  465 299.3    435    3439
+Processing:   440 4094 1020.2   3918    6951
+Waiting:      433 2497 1340.0   2207    6923
+Total:        870 4559 1058.1   4353    7379
+
+Percentage of the requests served within a certain time (ms)
+  50%   4353
+  66%   4362
+  75%   4370
+  80%   4375
+  90%   7332
+  95%   7355
+  98%   7367
+  99%   7374
+ 100%   7379 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking demo.crux.yoctotta.com (be patient)
+
+
+Server Software:        nginx/1.13.12
+Server Hostname:        demo.crux.yoctotta.com
+Server Port:            30358
+
+Document Path:          /event.svc/event
+Document Length:        95 bytes
+
+Concurrency Level:      10
+Time taken for tests:   106.674 seconds
+Complete requests:      200
+Failed requests:        0
+Total transferred:      107000 bytes
+Total body sent:        126000
+HTML transferred:       19000 bytes
+Requests per second:    1.87 [#/sec] (mean)
+Time per request:       5333.682 [ms] (mean)
+Time per request:       533.368 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.98 [Kbytes/sec] received
+                        1.15 kb/s sent
+                        2.13 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      417  455 149.6    436    1848
+Processing:   464 4658 3097.6   3912   20240
+Waiting:      463 3303 2617.6   3041   19805
+Total:        907 5113 3134.4   4345   20698
+
+Percentage of the requests served within a certain time (ms)
+  50%   4345
+  66%   4362
+  75%   4408
+  80%   4485
+  90%   5868
+  95%   8449
+  98%  18868
+  99%  20149
+ 100%  20698 (longest request)
+This is ApacheBench, Version 2.3 <$Revision: 1826891 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking demo.crux.yoctotta.com (be patient)
+INFO: POST header == 
+---
+POST /event.svc/event HTTP/1.0
+Content-length: 261
+Content-type: application/json
+Authorization:eyJhbGciOiJIUzUxMiJ9.eyJuYW1lIjoiU3lzdGVtQWRtaW4iLCJleHAiOjE1MzczMzU3NTIsInVzZXJuYW1lIjoic3lzLWFkbSJ9.0OBz6m5jpJOMdyOkj79xGxzXncTH4Wgtuif8OlmSb2G1eA12WBc2RCo7s7H6l4t5scgWBdhU_2RjVCKsw_phPg
+Host: demo.crux.yoctotta.com:30358
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+
+---
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:21:50 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"794086ba-bb80-11e8-dbd5-7f7ef5de6948","ackTime":1537302110012,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:21:50 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"79d39efc-bb80-11e8-6b37-0e8adfc67bd2","ackTime":1537302110918,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:21:51 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"7a5f161e-bb80-11e8-89b8-3879c6f9e6bf","ackTime":1537302111840,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:21:53 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"7b67faa0-bb80-11e8-fc59-74b5052b2ba2","ackTime":1537302113574,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:21:54 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"7bf2fc92-bb80-11e8-a0e9-cecbea851376","ackTime":1537302114477,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:21:55 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"7c7dfe85-bb80-11e8-e86b-c351536475c7","ackTime":1537302115374,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:21:56 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"7d08d967-bb80-11e8-7a95-386c1f8adce2","ackTime":1537302116306,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:21:57 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"7d945089-bb80-11e8-8568-140314398614","ackTime":1537302117204,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:21:58 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"7e1e8f2b-bb80-11e8-1ae8-7823b924a6a2","ackTime":1537302118120,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:21:59 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"7eaa7b7d-bb80-11e8-de45-5873702aeda6","ackTime":1537302119034,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:21:59 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"7f335a90-bb80-11e8-ed93-dc88636813ff","ackTime":1537302119930,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:00 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"7fbcaed3-bb80-11e8-22de-60d8737e96c2","ackTime":1537302120838,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:01 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"80493765-bb80-11e8-b767-098b3c981746","ackTime":1537302121761,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:02 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"80d71f87-bb80-11e8-4fde-9f6d353999b0","ackTime":1537302122682,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:03 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"815f896a-bb80-11e8-8348-844749b1701c","ackTime":1537302123585,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:04 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"81eb4eac-bb80-11e8-06b1-f315c70a87e0","ackTime":1537302124499,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:05 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"82747bdf-bb80-11e8-a199-867be795123a","ackTime":1537302125391,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:06 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"82feba82-bb80-11e8-8066-8c4cf39af296","ackTime":1537302126312,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:07 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"8390e864-bb80-11e8-85af-1fae0643491c","ackTime":1537302127248,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:08 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"84177d86-bb80-11e8-3d96-017f9c9bafba","ackTime":1537302128128,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:09 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"84a40618-bb80-11e8-9c08-d2651f7fd96b","ackTime":1537302129068,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:09 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"8530dcca-bb80-11e8-c4da-bb852a5134fe","ackTime":1537302129993,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:10 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"85bd655c-bb80-11e8-8234-46e1651f7af9","ackTime":1537302130909,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:11 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"86488e5e-bb80-11e8-82a3-bd03ac9c680b","ackTime":1537302131817,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:12 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"86d36940-bb80-11e8-aeac-5637e756f660","ackTime":1537302132711,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:13 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"875b8503-bb80-11e8-f4b2-fd2be3f7c4a7","ackTime":1537302133614,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:14 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"87e48b25-bb80-11e8-14e6-e9e60fd60eb4","ackTime":1537302134501,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:15 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"886af938-bb80-11e8-6a80-08f4cd6d280c","ackTime":1537302135400,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:16 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"88f3ff5a-bb80-11e8-1c44-3089e02d948c","ackTime":1537302136302,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:17 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"8981e77c-bb80-11e8-962b-88b8c5e69856","ackTime":1537302137239,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:18 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"8a115641-bb80-11e8-a3e4-58250f2a0cce","ackTime":1537302138171,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:19 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"8a9a3553-bb80-11e8-ab3b-f14531a7321c","ackTime":1537302139045,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:19 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"8b2202f6-bb80-11e8-464d-dae67ba4d0e6","ackTime":1537302139956,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:20 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"8baa93e8-bb80-11e8-4fb6-4e1bbd815738","ackTime":1537302140946,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:21 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"8c43c6ab-bb80-11e8-36e4-9e4fdeed8a28","ackTime":1537302141856,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:22 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"8cd09d5d-bb80-11e8-559c-bc22992c8618","ackTime":1537302142765,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:23 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"8d59555f-bb80-11e8-9b25-4e61262c9615","ackTime":1537302143672,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:24 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"8de43041-bb80-11e8-f107-e84c025f7142","ackTime":1537302144571,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:25 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"8e6e6ee3-bb80-11e8-44cb-a616f70ecdb0","ackTime":1537302145487,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:26 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"8ef55226-bb80-11e8-ea96-3e07253b59b3","ackTime":1537302146358,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:27 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"8f7c5c79-bb80-11e8-0a74-9ccdf69a1448","ackTime":1537302147251,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:28 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"9005b0bc-bb80-11e8-bb77-25ab16e81688","ackTime":1537302148149,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:29 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"908f7a2e-bb80-11e8-fbdb-6d911da27847","ackTime":1537302149063,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:29 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"911d6250-bb80-11e8-d148-2bfc4d2d08d8","ackTime":1537302149975,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:30 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"91a4bac3-bb80-11e8-eedd-5e62d1f1c619","ackTime":1537302150872,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:31 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"9230f536-bb80-11e8-a4d5-9c743b20cb1c","ackTime":1537302151803,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:32 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"92bda4d9-bb80-11e8-145d-2745e85b5a63","ackTime":1537302152723,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:33 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"934683eb-bb80-11e8-e038-2e9c1121f700","ackTime":1537302153673,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:34 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"93da5f7e-bb80-11e8-3d9c-8ac2d94575d8","ackTime":1537302154579,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:36 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"94e5b501-bb80-11e8-19c1-b38a43bd5cf0","ackTime":1537302156365,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:37 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"95741253-bb80-11e8-8a81-f9d877aa20f8","ackTime":1537302157265,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:38 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"95fddbc6-bb80-11e8-2a0b-6f5424778d4e","ackTime":1537302158166,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:39 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"968a8b68-bb80-11e8-6c70-4189f874312c","ackTime":1537302159097,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:39 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"9712ce3a-bb80-11e8-ffab-5c2ecb2b49fc","ackTime":1537302159986,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:40 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"979a26ac-bb80-11e8-b2f9-fce859979ec4","ackTime":1537302160874,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:41 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"9826611f-bb80-11e8-2ae8-d371ae1900b8","ackTime":1537302161788,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:42 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"98b2e9b2-bb80-11e8-c7aa-36caf8e36650","ackTime":1537302162709,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:43 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"993d4f65-bb80-11e8-e6c1-5b98bf25cef6","ackTime":1537302163657,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:44 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"99ccbe28-bb80-11e8-7a64-67ad0a61a2db","ackTime":1537302164555,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:45 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"9a56fccb-bb80-11e8-d0dd-8774509a99a5","ackTime":1537302165461,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:46 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"9adc0b4e-bb80-11e8-b056-823e86cc5328","ackTime":1537302166333,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:47 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"9b678271-bb80-11e8-4805-8628b5ad98a1","ackTime":1537302167249,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:48 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"9bf172f4-bb80-11e8-c429-3435ed778866","ackTime":1537302168149,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:52 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"9e4219ba-bb80-11e8-109a-89b40eaf12ef","ackTime":1537302172120,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:53 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"9ede80cc-bb80-11e8-b6fa-a24b61f1603a","ackTime":1537302173060,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:53 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"9f6ae24e-bb80-11e8-6d89-3e2e149fb360","ackTime":1537302173981,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:54 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"9ff54800-bb80-11e8-7851-e0ad70ecb571","ackTime":1537302174890,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:55 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"a085a123-bb80-11e8-3ed1-44578cdcf026","ackTime":1537302175836,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:56 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"a1118d76-bb80-11e8-962d-e61631de929a","ackTime":1537302176753,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:57 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"a1973839-bb80-11e8-e6f4-72be5c8b8c84","ackTime":1537302177619,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:58 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"a21d582b-bb80-11e8-c461-c6c8e19f12a9","ackTime":1537302178494,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:22:59 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"a2a43b6d-bb80-11e8-bffe-6b4075086df0","ackTime":1537302179396,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:00 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"a32f8b7f-bb80-11e8-55f6-792eae1244c0","ackTime":1537302180308,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:01 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"a3bb02a1-bb80-11e8-ebb9-1d93b24764ba","ackTime":1537302181210,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:02 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"a44456e3-bb80-11e8-e1f7-373ceab9e09b","ackTime":1537302182128,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:03 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"a4cff515-bb80-11e8-f47e-d640013f8dc8","ackTime":1537302183039,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:03 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"a55d19e7-bb80-11e8-8b12-e7ba3a20eec4","ackTime":1537302183946,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:04 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"a5e75889-bb80-11e8-c22f-d17525478da8","ackTime":1537302184855,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:05 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"a674cb7b-bb80-11e8-c197-e1670a2e8766","ackTime":1537302185797,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:06 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"a6fe1fbd-bb80-11e8-3088-09452a86e7b2","ackTime":1537302186682,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:07 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"a785ed5f-bb80-11e8-9b20-31e84e672aee","ackTime":1537302187594,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:08 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"a81226d1-bb80-11e8-81d7-8ae60c9577f7","ackTime":1537302188497,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:09 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"a89dc504-bb80-11e8-804f-8ff646e2d1d0","ackTime":1537302189420,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:10 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"a92803a6-bb80-11e8-bcdd-36686d5630cd","ackTime":1537302190327,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:11 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"a9b74b58-bb80-11e8-1544-f6cab72807de","ackTime":1537302191269,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:12 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"aa461dda-bb80-11e8-e953-155a36e9ee82","ackTime":1537302192196,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:13 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"aad0356c-bb80-11e8-9102-7d114bb2db6c","ackTime":1537302193096,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:14 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"ab5ac22e-bb80-11e8-aa97-e17cfa4b7850","ackTime":1537302194013,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:14 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"abe4b2b0-bb80-11e8-1600-096d36149fb8","ackTime":1537302194920,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:15 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"ac6ea332-bb80-11e8-1499-c8c2a0267950","ackTime":1537302195819,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:16 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"acf7d065-bb80-11e8-41fa-c960052be410","ackTime":1537302196720,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:17 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"ad7fc517-bb80-11e8-fe4a-22ca026c5682","ackTime":1537302197602,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:18 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"ae0a78e9-bb80-11e8-3452-626ec8499a25","ackTime":1537302198523,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:19 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"ae98610b-bb80-11e8-5bf3-99d4df6dcca1","ackTime":1537302199444,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:20 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"af21b54e-bb80-11e8-1a6d-026a8ebc6838","ackTime":1537302200334,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:21 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"afa7d540-bb80-11e8-9fbe-45c5dbd21c58","ackTime":1537302201231,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:22 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"b0332552-bb80-11e8-ebd0-d0f5e9ef47cc","ackTime":1537302202207,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:23 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"b0c83965-bb80-11e8-1521-69d650849dbc","ackTime":1537302203149,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:24 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"b15473d8-bb80-11e8-da05-09c0bb564221","ackTime":1537302204021,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:24 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"b1dcb6ab-bb80-11e8-fb40-fd971d942fc8","ackTime":1537302204914,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:25 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"b267436d-bb80-11e8-9459-ee1a440cf04c","ackTime":1537302205836,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:26 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"b2f68b20-bb80-11e8-318d-7daf30974948","ackTime":1537302206769,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:27 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"b37fb852-bb80-11e8-ae21-2ad8c8ba7948","ackTime":1537302207682,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:28 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"b40cdd24-bb80-11e8-d700-b091a2df3440","ackTime":1537302208603,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:29 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"b49a01f6-bb80-11e8-c3eb-e5e7170d06bc","ackTime":1537302209521,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:30 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"b524dcd9-bb80-11e8-9179-3ced624bc528","ackTime":1537302210435,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:31 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"b5afb7bb-bb80-11e8-f78b-e3f0075244e0","ackTime":1537302211351,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:32 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"b6420cad-bb80-11e8-468e-cc3b20b4d44c","ackTime":1537302212307,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:33 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"b6d2b3ef-bb80-11e8-e495-cd1f785f9ede","ackTime":1537302213238,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:35 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"b8352a21-bb80-11e8-4a37-7589e855f244","ackTime":1537302215561,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:36 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"b8be0933-bb80-11e8-1b81-a155bdede900","ackTime":1537302216462,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:37 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"b94a1c95-bb80-11e8-33ce-2479176dfd5c","ackTime":1537302217386,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:38 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"b9d65708-bb80-11e8-de59-16d10c3f6e22","ackTime":1537302218315,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:39 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"ba5fab4a-bb80-11e8-c353-6aa59de4d79c","ackTime":1537302219210,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:40 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"baf18b0c-bb80-11e8-6207-9f402da54720","ackTime":1537302220168,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:41 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"bb7d9e6e-bb80-11e8-7dc3-40096adbd2dc","ackTime":1537302221100,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:42 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"bc0cbf10-bb80-11e8-52f3-8996a6a29e0c","ackTime":1537302222026,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:42 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"bc9724c2-bb80-11e8-07b1-21edc4c03e27","ackTime":1537302222932,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:43 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"bd20ee34-bb80-11e8-ddfb-80a6ac25af68","ackTime":1537302223823,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:44 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"bdac3e47-bb80-11e8-2df5-34439c613f81","ackTime":1537302224741,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:45 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"be340bea-bb80-11e8-4223-d5e2c008a450","ackTime":1537302225640,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:46 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"bec0e29c-bb80-11e8-8061-883d5197d734","ackTime":1537302226551,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:47 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"bf4aac0e-bb80-11e8-45e3-bb26c38883f9","ackTime":1537302227451,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:48 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"bfd279b0-bb80-11e8-67c7-9c92fc81e4dc","ackTime":1537302228339,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:49 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"c05b31b2-bb80-11e8-cb6f-63cb71a633bc","ackTime":1537302229250,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:50 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"c0e4fb24-bb80-11e8-d373-e77325f58622","ackTime":1537302230142,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:51 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"c1704b37-bb80-11e8-7022-a255d093a3d0","ackTime":1537302231068,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:51 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"c1f99f79-bb80-11e8-1c58-d5562304ad1b","ackTime":1537302231966,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:52 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"c28368eb-bb80-11e8-4fe6-8aaa4f5603c0","ackTime":1537302232960,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:53 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"c31bb14e-bb80-11e8-307d-c743ac691a9c","ackTime":1537302233864,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:54 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"c3a8d621-bb80-11e8-da40-7973e2b5d3df","ackTime":1537302234794,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:55 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"c4333bd3-bb80-11e8-f389-f8472d06affa","ackTime":1537302235698,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:56 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"c4be64d5-bb80-11e8-30b3-61df77f01f70","ackTime":1537302236602,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:57 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"c54918a8-bb80-11e8-1c40-3249933f5cfa","ackTime":1537302237527,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:58 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"c5d6166a-bb80-11e8-3b1b-4b23404c4e03","ackTime":1537302238444,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:23:59 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"c660550c-bb80-11e8-4c8f-f4c13e97c9c4","ackTime":1537302239349,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:00 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"c6ecdd9e-bb80-11e8-b592-f25d0b23472c","ackTime":1537302240270,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:01 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"c773e7f0-bb80-11e8-e51d-72ecbfef999c","ackTime":1537302241153,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:02 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"c7ffd442-bb80-11e8-3a7b-c4dcc6f8bd70","ackTime":1537302242066,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:02 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"c8886535-bb80-11e8-a8fd-ed326439ab18","ackTime":1537302242962,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:03 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"c9116b58-bb80-11e8-4cf6-3f65e06fe160","ackTime":1537302243864,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:04 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"c99da5cb-bb80-11e8-092f-acde97175b98","ackTime":1537302244784,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:05 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"ca27bd5d-bb80-11e8-7370-8a817f7285e8","ackTime":1537302245691,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:06 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"cab24a1f-bb80-11e8-6b97-5ccb476629a1","ackTime":1537302246598,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:07 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"cb3b7751-bb80-11e8-c0a2-d754170708a5","ackTime":1537302247485,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:08 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"cbc4f2a3-bb80-11e8-dc5d-1e4420eebefb","ackTime":1537302248381,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:09 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"cc4a0125-bb80-11e8-9dff-8535aa7d8941","ackTime":1537302249251,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:10 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"ccd35567-bb80-11e8-e0ff-31c56fa7ace6","ackTime":1537302250172,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:11 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"cd5e3049-bb80-11e8-9e46-2d7ced2331c8","ackTime":1537302251080,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:11 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"cde9f58b-bb80-11e8-9323-a7d5a0adb5b8","ackTime":1537302251983,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:12 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"ce74342e-bb80-11e8-1dca-7cbaf97b7827","ackTime":1537302252889,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:13 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"cefd3a50-bb80-11e8-4613-5419cc3fbe38","ackTime":1537302253785,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:14 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"cf83f682-bb80-11e8-5a8f-80bec04c3e1a","ackTime":1537302254682,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:15 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"d00f94b4-bb80-11e8-a1ff-e12e81cbce90","ackTime":1537302255591,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:16 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"d09873c7-bb80-11e8-9dcc-fa4fc798b196","ackTime":1537302256495,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:17 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"d1221629-bb80-11e8-bde9-1ded5420ad24","ackTime":1537302257394,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:18 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"d1ac2dbb-bb80-11e8-8fc9-8611cda9e410","ackTime":1537302258292,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:19 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"d236936e-bb80-11e8-3061-cc30dd8e952b","ackTime":1537302259198,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:20 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"d33d06f0-bb80-11e8-2c13-e4dbd7abc574","ackTime":1537302260924,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:21 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"d3c522b2-bb80-11e8-2360-a9c3df1ed1c4","ackTime":1537302261805,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:22 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"d44b1b94-bb80-11e8-11cf-bf7b7f223cd6","ackTime":1537302262700,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:23 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"d4d7cb36-bb80-11e8-c76a-66a71a70ad73","ackTime":1537302263669,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:24 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"d569d208-bb80-11e8-d23b-a2c9ed3015c1","ackTime":1537302264579,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:25 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"d5f262fa-bb80-11e8-7970-101c7df62680","ackTime":1537302265470,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:26 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"d67db30c-bb80-11e8-9124-391c93755b76","ackTime":1537302266381,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:27 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"d709c66e-bb80-11e8-95db-d6a622bdd1eb","ackTime":1537302267297,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:28 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"d79627f1-bb80-11e8-7592-ed7153cb89ef","ackTime":1537302268227,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:29 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"d81eb8e3-bb80-11e8-9724-d6c76c760619","ackTime":1537302269113,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:29 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"d8a65f76-bb80-11e8-b1cc-ce0f2f8b79d0","ackTime":1537302269994,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:30 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"d92c0a39-bb80-11e8-918f-e2e9befb3a67","ackTime":1537302270883,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:31 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"d9b6be0b-bb80-11e8-8a81-74a301516914","ackTime":1537302271775,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:32 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"da40124d-bb80-11e8-c6dd-0df11ad04960","ackTime":1537302272692,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:33 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"daca77ff-bb80-11e8-9188-25044f1b91d2","ackTime":1537302273582,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:34 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"db4fd4a2-bb80-11e8-5024-74324c414407","ackTime":1537302274468,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:42 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"dffba974-bb80-11e8-9da4-1034cceeaeda","ackTime":1537302282312,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:43 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"e085e816-bb80-11e8-68b3-2cb4760d7528","ackTime":1537302283217,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:44 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"e10ea018-bb80-11e8-cc12-8914cf511164","ackTime":1537302284098,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:44 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"e193fcba-bb80-11e8-7f46-3f104579ebc3","ackTime":1537302284978,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:45 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"e21d9f1d-bb80-11e8-c550-620d4c5b7188","ackTime":1537302285868,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:46 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"e2a60900-bb80-11e8-4bbe-f6f5e7120e28","ackTime":1537302286762,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:47 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"e32ec103-bb80-11e8-05df-115bacba05cf","ackTime":1537302287676,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:48 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"e3b68ea5-bb80-11e8-8f91-67967f4ecad4","ackTime":1537302288568,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:49 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"e4419097-bb80-11e8-cfb3-392090ae4dde","ackTime":1537302289473,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:50 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"e4cb32fa-bb80-11e8-aff1-adb35af05f44","ackTime":1537302290379,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:51 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"e554d55c-bb80-11e8-927c-f59ebdca0a8e","ackTime":1537302291278,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:52 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"e5de50af-bb80-11e8-9969-0efadb34cc30","ackTime":1537302292174,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:53 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"e6658211-bb80-11e8-0561-114d6d400430","ackTime":1537302293063,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:53 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"e6ee3a14-bb80-11e8-056b-8211d5bf5cc5","ackTime":1537302293996,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:54 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"e77a7486-bb80-11e8-3c0f-55e18d1e2146","ackTime":1537302294875,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:55 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"e8029048-bb80-11e8-b6c9-cb9f78092cd5","ackTime":1537302295772,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:56 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"e88d441b-bb80-11e8-f579-eeb65bc6ac50","ackTime":1537302296682,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:57 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"e914eaae-bb80-11e8-ee4d-fe5547219f8e","ackTime":1537302297573,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:58 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"e9a14b30-bb80-11e8-7629-5751a96b16b0","ackTime":1537302298479,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:24:59 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"ea28a3a3-bb80-11e8-c431-abfdcd034ac0","ackTime":1537302299386,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:25:00 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"eab26d15-bb80-11e8-6174-b5b06f934aec","ackTime":1537302300267,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:25:01 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"eb397767-bb80-11e8-491e-ce0ae877d042","ackTime":1537302301153,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:25:02 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"ebbd7479-bb80-11e8-6d59-6f5b11ed859b","ackTime":1537302302017,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:25:02 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"ec451b0b-bb80-11e8-5385-98d1a4019597","ackTime":1537302302923,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:25:03 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"eccf329d-bb80-11e8-9641-b4c14e58e43f","ackTime":1537302303811,"status":"PUBLISHED"}
+LOG: Response code = 200
+LOG: header received:
+HTTP/1.1 200 OK
+Server: nginx/1.13.12
+Date: Tue, 18 Sep 2018 20:25:04 GMT
+Content-Type: application/json
+Content-Length: 95
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+
+{"eventId":"ed574e60-bb80-11e8-e6b6-d34870c5ecce","ackTime":1537302304721,"status":"PUBLISHED"}
+LOG: Response code = 200
+
+
+Server Software:        nginx/1.13.12
+Server Hostname:        demo.crux.yoctotta.com
+Server Port:            30358
+
+Document Path:          /event.svc/event
+Document Length:        95 bytes
+
+Concurrency Level:      1
+Time taken for tests:   195.677 seconds
+Complete requests:      200
+Failed requests:        0
+Total transferred:      107000 bytes
+Total body sent:        126000
+HTML transferred:       19000 bytes
+Requests per second:    1.02 [#/sec] (mean)
+Time per request:       978.386 [ms] (mean)
+Time per request:       978.386 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.53 [Kbytes/sec] received
+                        0.63 kb/s sent
+                        1.16 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      420  466 299.2    436    3441
+Processing:   434  512 310.5    471    4383
+Waiting:      434  504 294.7    470    4383
+Total:        854  978 431.7    908    4816
+
+Percentage of the requests served within a certain time (ms)
+  50%    908
+  66%    914
+  75%    919
+  80%    924
+  90%    941
+  95%    977
+  98%   2357
+  99%   3974
+ 100%   4816 (longest request)
